@@ -1,5 +1,5 @@
 import Home from "./Home";
-import { fireEvent, getByRole, getByTestId, render } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 
 describe(Home, () => {
     it('display correct initial count', () => {
@@ -39,13 +39,7 @@ describe(Home, () => {
     })
 
 
-    // it('count should invert sign if the switch sign button clicked', () => {
-    //     const { getByTestId, getByRole } = render(<Home />);
-    //     const SwitchSign = getByRole("button", { name: "SwitchSign" });
 
-    //     fireEvent.click(SwitchSign);
-    //     expect(Number(getByTestId("count").textContent)).toEqual(-1)
-    // })
 })
 
 
